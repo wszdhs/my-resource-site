@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源中心</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>资源中心</h1>
+        <div class="user-info">
+            <span id="user-email-display"></span>
+            <button id="signout-button">登出</button>
+        </div>
+
+        <!-- 会员提示区域 -->
+        <div id="vip-prompt" style="display: none;">
+            <p>🔒 您发现了会员专属资源！<a href="你的爱发电链接" target="_blank">点击此处赞助本站</a>，即可解锁所有内容。</p>
+        </div>
+
+        <hr>
+        <h2>📦 资源列表</h2>
+        <div id="resource-list"></div>
+    </div>
+
+    <!-- 引入Supabase和资源加载脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="auth.js"></script>
+</body>
+</html>

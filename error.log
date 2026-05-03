@@ -1,0 +1,3 @@
+TypeError: Object has been destroyed
+    at BrowserWindow.<anonymous> (C:\Users\帅哥\AppData\Local\123pan\resources\app.asar\el\main\index.js:2:154195)
+    at BrowserWindow.emit (node:events:390:28)

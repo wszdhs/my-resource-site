@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>资源分享站 - 登录/注册</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 登录/注册表单容器 -->
+    <div class="auth-container">
+        <h2 id="form-title">登录</h2>
+        <form id="auth-form">
+            <input type="email" id="email" placeholder="邮箱地址" required>
+            <input type="password" id="password" placeholder="密码" required>
+            <button type="submit" id="auth-button">登录</button>
+        </form>
+        <p id="toggle-text">
+            没有账号？<a href="#" id="toggle-link">点击注册</a>
+        </p>
+    </div>
+
+    <!-- 引入Supabase和认证脚本 -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+    <script src="auth.js"></script>
+</body>
+</html>
